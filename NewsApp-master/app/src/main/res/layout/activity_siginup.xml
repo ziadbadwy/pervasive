@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign"
+    tools:context=".SiginupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="220dp"
+            android:padding="20dp">
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_username"
+                android:hint="Username"
+                android:background="@drawable/lavender_border"
+                android:padding="8dp"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/baseline_account_circle_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/grey"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_email"
+                android:hint="Email"
+                android:background="@drawable/lavender_border"
+                android:padding="8dp"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/grey"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_password"
+                android:hint="Password"
+                android:background="@drawable/lavender_border"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/grey"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_confirm_password"
+                android:hint="Confirm Password"
+                android:background="@drawable/lavender_border"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/grey"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:text="Sign Up"
+                android:background="@color/lavender"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                app:cornerRadius="45dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Already have an account?"
+                android:textColor="@color/lavender"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:id="@+id/LoginRedirectText"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

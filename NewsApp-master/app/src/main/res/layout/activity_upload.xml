@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lavender_fill"
+    android:textAlignment="center"
+    android:orientation="vertical"
+
+    tools:context=".UploadActivity">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="393dp"
+        android:layout_height="710dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/lavender_border"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/uploadImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/baseline_add_photo_alternate_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Title_img"
+            android:layout_width="249dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/lavender_border"
+            android:hint="Title"
+            android:padding="16dp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.43"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadImage"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/Descp_image"
+            android:layout_width="240dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/lavender_border"
+            android:hint="Description"
+            android:padding="16dp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title_img" />
+
+
+        <TextView
+            android:id="@+id/tempSensor"
+            android:layout_width="200dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/lavender_border"
+            android:padding="16dp"
+            android:text="Temp"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Descp_image" />
+
+        <Button
+            android:id="@+id/postButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="73dp"
+            android:background="@color/lavender"
+            android:text="Post"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tempSensor"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

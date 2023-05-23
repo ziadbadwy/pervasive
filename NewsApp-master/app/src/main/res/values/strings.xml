@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">242043518505973</string>
+    <string name="fb_login_protocol_scheme">fb242043518505973</string>
+    <string name="facebook_client_token">df9b44150af25913b3ed2aaa9687d03b</string>
+</resources>
